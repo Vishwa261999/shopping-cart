@@ -1,0 +1,93 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartItem {
+  width: 700px;
+  height: 250px;
+  display: flex;
+
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 30px;
+}
+
+.cartItem img {
+  width: 200px;
+}
+
+.cartItem .description {
+  width: 100%;
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+  .cartItem {
+    width: 100%;
+    margin: 0px;
+    padding: 0px 0px;
+    height: 300px;
+  }
+  .cartItem img {
+    width: 180px;
+  }
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.checkout button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(19, 19, 19);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* CartPageBanner.module.css */
+
+.cart-banner {
+  position: relative;
+  background-image: url("https://www.staysky.com/wp-content/uploads/shopping_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.cart-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.cart-banner-content {
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cart-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.cart-banner p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
